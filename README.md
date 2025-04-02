@@ -7,7 +7,8 @@
    - Implemented a web project - a product catalog covering various product categories, such as phones, tablets, and accessories. Users can browse products, add them to the cart and favorites, as well as view details for each item. The project includes a main page with featured products, category-specific pages, a product details page, a shopping cart, and a favorites section.
 
  ## 2. Technologies:
-    - React.js with TypeScript: used to build the UI and components of the application, providing the benefits of static typing and an improved developer experience.
+    - React.js with TypeScript: used to build the UI and components of the application,
+        providing the benefits of static typing and an improved developer experience.
     - SCSS: used to style components according to the BEM methodology.
     - localStorage: used to store cart and favorites data on the client side.
     - Redux for global state
