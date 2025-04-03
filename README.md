@@ -8,7 +8,7 @@
 
  ## Technologies:
     - React.js with TypeScript: used to build the UI and components of the application,
-        providing the benefits of static typing and an improved developer experience.
+       providing the benefits of static typing and an improved developer experience.
     - SCSS: used to style components according to the BEM methodology.
     - localStorage: used to store cart and favorites data on the client side.
     - Redux for global state

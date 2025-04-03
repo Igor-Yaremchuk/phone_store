@@ -33,6 +33,9 @@ export const ItemsDropdown = () => {
       params.delete('page');
     } else {
       params.set('perPage', option);
+      params.set('page', '1');
+      params.set('trans', '0');
+      params.set('group', '0');
     }
 
     setSearchParams(params);

@@ -19,6 +19,7 @@ export const Pagination: React.FC<Props> = ({ totalItems }) => {
   const perPage = searchParams.get('perPage') || 'All';
   const totalPages = Math.ceil(totalItems / +perPage);
   const query = searchParams.get('query');
+  const trans = searchParams.get('trans');
 
   const { theme } = useAppSelector(state => state.theme);
 
@@ -33,7 +34,6 @@ export const Pagination: React.FC<Props> = ({ totalItems }) => {
   };
 
   const numbersOfPage = getNumberOfPages(totalPages);
-
   const [groupIndex, setGroupIndex] = useState(searchParams.get('group') || 0);
 
   const itemsPerPage = 4;
@@ -95,7 +95,12 @@ export const Pagination: React.FC<Props> = ({ totalItems }) => {
       setTransformValue(0);
       setGroupIndex(0);
     }
-  }, [query]);
+
+    if (trans === '0') {
+      setTransformValue(0);
+      setGroupIndex(0);
+    }
+  }, [query, trans]);
 
   return (
     <div className="pagination">

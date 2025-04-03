@@ -18,7 +18,7 @@ type Props = {
 };
 
 export const ProductCard: React.FC<Props> = React.memo(
-  ({ product, discount, slash }) => {
+  ({ product, discount }) => {
     const { image, name, price, screen, capacity, ram, fullPrice } = product;
 
     const { theme } = useAppSelector(state => state.theme);
