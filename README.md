@@ -18,3 +18,9 @@
     - Presentation of a portfolio with completed projects.
     - Adaptive design for correct display on devices of various sizes (phone, tablet, computer).
     - Use of the BEM methodology for structuring CSS and ensuring ease of maintenance and extension.
+
+## Instructions :
+    To run the project locally you need Node.js v20+ and 3 steps:
+      git clone
+      npm i
+      npm start
