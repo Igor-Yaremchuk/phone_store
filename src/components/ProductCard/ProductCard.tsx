@@ -57,7 +57,8 @@ export const ProductCard: React.FC<Props> = React.memo(
             state={{ search: location }}
             className="productCard__link"
           >
-            {slash ? (
+            <img src={image} alt={name} className="productCard__link_img" />
+            {/* {slash ? (
               <img
                 src={`/${image}`}
                 alt={name}
@@ -65,7 +66,7 @@ export const ProductCard: React.FC<Props> = React.memo(
               />
             ) : (
               <img src={image} alt={name} className="productCard__link_img" />
-            )}
+            )} */}
           </Link>
 
           <Link
